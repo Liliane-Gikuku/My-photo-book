@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UniformsActivity">
+
+  <ImageView
+      android:id="@+id/imgUniforms"
+      android:layout_width="434dp"
+      android:layout_height="377dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginEnd="8dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:srcCompat="@drawable/img_7"
+      tools:layout_editor_absoluteY="0dp" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline7"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_percent="0.5"/>
+
+  <TextView
+      android:id="@+id/tvUniforms"
+      android:layout_width="359dp"
+      android:layout_height="37dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="32dp"
+      android:layout_marginEnd="8dp"
+      android:text="We are the city friends of your kids. Our dresses are not only beautiful but also joyous. They will make your kids happy"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.505"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imgUniforms" />
+
+  <Button
+      android:id="@+id/btnUniforms"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="32dp"
+      android:layout_marginEnd="24dp"
+      android:backgroundTint="#46134E"
+      android:text="Previous"
+      android:textAllCaps="false"
+      app:layout_constraintEnd_toStartOf="@+id/guideline8"
+      app:layout_constraintHorizontal_bias="0.457"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvUniforms" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline8"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_percent="0.5" />
+
+  <Button
+      android:id="@+id/btnUniform"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="24dp"
+      android:layout_marginEnd="8dp"
+      android:backgroundTint="#46134E"
+      android:text="Next"
+      android:textAllCaps="false"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.146"
+      app:layout_constraintStart_toStartOf="@+id/guideline8"
+      app:layout_constraintTop_toTopOf="@+id/btnUniforms" />
+</androidx.constraintlayout.widget.ConstraintLayout>
